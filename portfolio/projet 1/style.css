@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  padding: 40px;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #fff0f6;
+  padding: 35px;
+  max-width: 550px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 2px solid #d291ff;
+}
+
+h2 {
+  text-align: center;
+  color: #880e4f;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.section label {
+  display: block;
+  margin-bottom: 6px;
+  color: #6a1b9a;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #ce93d8;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ba68c8;
+  box-shadow: 0 0 5px #f48fb1;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ce93d8, #f48fb1);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #f48fb1, #ce93d8);
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.payment-methods label {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.payment-methods input[type="radio"] {
+  display: none;
+}
+
+.payment-methods img {
+  width: 80px;
+  height: auto;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  transition: border 0.3s, transform 0.2s;
+}
+
+.payment-methods input[type="radio"]:checked + img {
+  border: 3px solid #ba68c8;
+  transform: scale(1.05);
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+.logo-container {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+  }
